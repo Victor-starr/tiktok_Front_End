@@ -1,0 +1,238 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav.secondnav {
+    display: none;
+}
+
+nav.firstnav {
+    background-color: #121212;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    border-bottom: #2a2a2a solid 1px;
+    z-index: 1;
+    /* border: red solid 2px; */
+
+}
+
+nav.firstnav span.firstbar-row{
+    /* border: red solid 2px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+
+nav.firstnav span img {
+    /* border: red solid 2px; */
+    height: 40px;
+    width: auto;
+}
+
+span.search-holder {
+    /* border:rgb(25, 0, 255) solid 2px; */
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    width: 500px;
+}
+
+nav.firstnav span.search-bar {
+    width: 500px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+span.search-holder input {
+    height: 100%;
+    width: 85%;
+    background-color: #2f2f2f;
+    font-size: 20px;
+    padding: 0 0 0 15px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: none;
+    border-right: rgb(114, 114, 114) solid 1px;
+    color: white;
+}
+
+.search-holder input:focus {
+    border: none;
+    outline: none;
+    /* This removes the default focus outline in some browsers */
+}
+
+span.search-holder input::placeholder {
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
+
+span.search-holder button.fa-search {
+    height: 100%;
+    width: 15%;
+    background-color: #2f2f2f;
+    font-size: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+    color: rgb(187, 187, 187);
+}
+
+span.button-container {
+    /* border: rgb(17, 0, 255) solid 2px; */
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+
+span.button-container div,
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    height: 80%;
+    font-weight: bold;
+    color: white;
+
+}
+
+span div.upload-button {
+    background-color: #2f2f2f;
+    border: #252525 solid 1px;
+    color: white;
+    height: 75%;
+    width: 100px;
+    padding-right: 5px;
+}
+
+span div.upload-button:hover {
+    background-color: rgba(97, 97, 97, 0.686);
+}
+
+span div.login-button {
+    background-color: #FF3B5C;
+    color: white;
+    height: 75%;
+    width: 100px;
+}
+
+span div.more-button {
+    /* background-color: rgb(43, 255, 0); */
+    color: white;
+    height: auto;
+    width: 20px;
+}
+
+p {
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Drop down */
+
+span.drop-down{
+    display: none;
+    position: absolute;
+    top: 62px;
+    right: 0px;
+    /* border: rgb(223, 217, 217) 2px solid; */
+    background-color: #252525;
+    height: auto;
+
+}
+span.drop-down div.fa{
+    /* border: red 2px solid; */
+    padding: 10px 5px 10px 5px;
+    justify-content: start;
+    height: auto;
+    color: #eaeaea;
+}
+span.drop-down div.fa:hover{
+    background-color: #2f2f2f;
+}
+span.drop-down span.fa p{
+    margin: 0px 5px 0 5px;
+    font-size: 10px;
+    
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    margin-left: 5px;
+}
+
+.slider:before {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #0be09b;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #0be09b;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

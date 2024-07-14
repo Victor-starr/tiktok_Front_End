@@ -1,0 +1,179 @@
+i.fa-bars,
+i.fa-close,
+span.icon-menu-bar img,
+span.icon-menu-bar,
+.bottom-aside span h1{
+    display: none;
+}
+
+aside {
+    /* border: red solid 2px; */
+    position: fixed;
+    background-color: #121212;
+    top: 63px;
+    left: 0px;   /* for phone users needs to be -227, but for pc 0px */
+    height: 100vh;
+    width: 224px;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 2;
+    overflow-y: auto;
+
+}
+
+div.top-aside{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 10px 0 10px;
+    padding-bottom: 20px;
+    border:none;
+    /* border: rgb(84, 202, 90) solid 2px; */
+    border-bottom: #2a2a2a solid 1px;
+}
+.top-aside span{
+    /* border: rgb(84, 155, 202) solid 2px; */
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+i.fa{
+    margin: 0 5px 0 10px;
+}
+span.main-bht a{
+    color: #ff3b5c; /* its main bc we are on page FYR*/
+}
+span.login-descriotion{
+    margin: 10px 0 10px;
+    color: rgba(255, 255, 255, .5);;
+    font-size: 18px;
+}
+button.log-in-btn{
+    height: 50px;
+    background-color:#252525;
+    color: #ff3b5c;
+    border: #ff3b5c solid 2px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+div.bottom-aside{
+    /* border: rgb(202, 84, 167) solid 2px; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+button.efct_house{
+    margin: 10px;
+    height: 50px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+button.efct_house img{
+    height: 35px;
+}
+span.moreinfo{
+    /* border: rebeccapurple solid 2px; */
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+span.moreinfo a{
+    font-size: 12px;
+    margin:0 5px 0 0;
+    color: rgba(255, 255, 255, .5);
+}
+
+span.moreadds{
+    /* border: rgb(53, 51, 153) solid 2px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+span.moreadds a{
+    margin:0px 5px 0 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, .5);
+}
+
+span.moresupport{
+    /* border: rgb(59, 153, 51) solid 2px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+span.moresupport a{
+    margin:0px 6px 0 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, .5);
+}
+span.copyright{
+    /* border: rgb(51, 146, 153) solid 2px; */
+    font-size: 12px;
+    color: rgba(255, 255, 255, .5);
+}
+
+
+
+/* Hover Effect */
+
+span.hover-1:hover{
+    background-color: #1b1b1b;
+}
+button.log-in-btn:hover{
+    background-color: rgba(230, 54, 83, 0.103);;
+}
+button.efct_house:hover{
+    font-size: 18px;
+}
+button.efct_house:hover img{
+    height: 40px;
+}
+span.moreinfo a:hover ,
+span.moreadds a:hover,
+span.moresupport a:hover{
+    text-decoration: underline;
+}
+
+
+aside::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+aside::-webkit-scrollbar-thumb {
+    background-color: #363636; /* Set the color of the scrollbar thumb */
+    border-radius: 6px; /* Set the border radius of the thumb */
+}
+
+aside::-webkit-scrollbar-track {
+    background-color: transparent; /* Set the color of the scrollbar track */
+}
+
+
+
+/* animation */
+aside {
+    /* Your existing styles */
+    transition: left 0.3s ease; /* Add transition property */
+}
+
+i.fa-bars,
+i.fa-close {
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Add transition property */
+}
+
+i.fa-bars:hover,
+i.fa-close:hover {
+    opacity: 0.8; /* Add a hover effect */
+}

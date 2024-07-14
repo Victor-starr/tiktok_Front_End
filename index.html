@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/fav-Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <!-- PC -->
+    <link rel="stylesheet" href="css/pc/pc_top_nav_bar.css">       <!-- pc_top_nav_bar -->
+    <link rel="stylesheet" href="css/pc/pc_aside.css">             <!-- pc_aside -->
+    <link rel="stylesheet" href="css/pc/pc_content.css">       <!-- pc_content -->
+    <!-- Phone -->
+    <link rel="stylesheet" href="css/phone/phone_top_nav_bar.css"> <!-- phone_top_nav_bar -->
+    <link rel="stylesheet" href="css/phone/phone_aside.css">       <!-- phone_aside -->
+    <link rel="stylesheet" href="css/phone/phone_bottom_nav.css">       <!-- phone_bottom_nav -->
+    <link rel="stylesheet" href="css/phone/phone_content.css">       <!-- phone_content -->
+    <title>Tik Tok</title>
+</head>
+<body>
+    <nav class="firstnav">
+        <span class="firstbar-row"><img src="img/tiktok_logo.png"></span>
+        <span class="search-bar firstbar-row">
+            <span class="search-holder">
+                <input type="text" placeholder="Search..">
+                <button class="fa fa-search"></button>
+            </span>
+        </span>
+
+        <span class="button-container firstbar-row">
+            <div class="upload-button">
+                <a href="#">
+                <i class="fa fa-plus"></i>
+                <p>Upload</p>
+                </a>
+            </div>
+            <div class="login-button">
+                <a href="#">
+                <p>Log in</p>
+                </a>
+            </div>
+            <div class="more-button"  onclick="toggleDropdown()">
+                <a href="#">
+                <i class="fa fa-ellipsis-v"></i>
+                </a>
+            </div>
+
+            <span class="drop-down" id="dropdown">
+                <div class="fa fa-adn">
+                    <p>English</p>
+                </div>
+                <div class="fa fa-question-circle-o">
+                    <p>Feedback and help</p>
+                </div>
+                <div class="fa fa-moon-o">
+                    <p>Dark mode</p>
+                    <label class="switch" id="colorSwitch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </span>
+        </span>
+    </nav>
+    <nav class="secondnav">
+        <i class="fa fa-bars"></i>
+        <span class="fol-fyr">
+        <p>Following</p>
+        <p class="main-bht">For You</p>
+        </span>
+        <i class="fa fa-search"></i>
+    </nav>
+
+    <aside>
+        <div class="top-aside">
+            <span class="icon-menu-bar">
+                <i class="fa fa-close"></i>
+                <img src="img/tiktok_logo.png" alt="">
+            </span>
+            <span class="hover-1 col-chainger main-bht">
+                <a href="#">
+                <i class="fa fa-home"></i>
+                <p>For You</p>
+                </a>
+            </span>
+            <span class="hover-1 col-chainger">
+                <a href="#">
+                <i class="fa fa-group"></i>
+                <p>Follwing</p>
+            </a>
+            </span>
+            <span class="hover-1 col-chainger media-hide">
+                <a href="#">
+                <i class="fa fa-compass"></i>
+                <p>Explore</p>
+            </a>
+            </span>
+            <span class="hover-1 col-chainger media-hide">
+                <a href="#">
+                <i class="fa fa-video-camera"></i>
+                <p>Live</p>
+            </a>
+            </span>
+            <span class="login-descriotion media-hide">
+                <p>Log in to follow creators, like videos, and view comments.</p>
+            </span>
+            <button class="log-in-btn">Log In</button>
+        </div>
+        <div class="bottom-aside">
+            <button class="efct_house" style="background-image: url(img/create_effect_background.png);">
+                <img src="img/effec-house-icon.png" alt="effect-house-icon">
+                Create effects
+            </button>
+            <span class="moreinfo">
+                <h1>Company</h1>
+                <a href="#">About</a>
+                <a href="#">Newsroom</a>
+                <a href="#">Contact</a>
+                <a href="#">Careers</a>
+            </span>
+            <span class="moreadds">
+                <h1>Programs</h1>
+                <a href="#">TikTok for Good</a>
+                <a href="#">Advertise</a>
+                <a href="#">Developers</a>
+                <a href="#">Transparency</a>
+                <a href="#">TikTok Rewards</a>
+                <a href="#">TikTok Embeds</a>
+            </span>
+            <span class="moresupport">
+                <h1>Resources</h1>
+                <a href="#">Help</a>
+                <a href="#">Safety</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Creator Portal</a>
+                <a href="#">Community Guidelines</a>
+            </span>
+            <span class="copyright">
+                <p>© 2023 TikTok</p>
+            </span>
+        </div>
+    </aside>
+
+    <nav class="bottom-nav" id="bottomNav">
+        <span>
+            <i class="fa fa-home"></i>
+            <p>Home</p>
+        </span>
+        <span>
+            <i class="fa fa-compass"></i>
+            <p>Discover</p>
+        </span>
+        <span>
+            <button class="fa fa-plus"></button>
+        </span>
+        <span>
+            <i class="fa fa-inbox"></i>
+            <p>Inbox</p>
+        </span>
+        <span>
+            <i class="fa fa-user"></i>
+            <p>Proflie</p>
+        </span>
+    </nav>
+    <section class="content">
+    
+        <section class="content-box">
+            <div class="top-content">
+                <img src="img/test8.jpg" alt="pfp">
+            <span class="bio">
+                <span class="names">
+                    <p class="nickname">Phantom4o</p>
+                    <p class="proflie_name">BMW</p>
+                </span>
+                <span class="description">
+                    <p class="title">Random-text</p>
+                    <p class="hashtag">&#x23;fyp</p>
+                    <p class="hashtag">&#x23;foryou</p>
+                    <p class="hashtag">&#x23;viral</p>
+                </span>
+                <span class="music">
+                    <i class="fa fa-music"> - Kekky🍪/Kekky🍪/Kekky🍪/Kekky🍪Kekky🍪</i>
+                </span>
+            </span>
+            <div class="follow-button">Follow</div>
+        </div>
+        <div class="video-pt">
+            <div class="video-container">
+                <video autoplay loop muted src="video/vid3.mp4" id="video1"></video>
+                <i class="fa fa-pause play-icon" data-video-id="video1"></i>
+                <i class="fa fa-volume-off volume-icon" data-video-id="video1"></i>
+            </div>
+            <div class="video-sidebar">
+                <span class="proflie">
+                    <img src="img/test8.jpg" alt="pfp">
+                    <i class="fa fa-plus"></i>
+                </span>
+                <span class="fa fa-heart" id="heart-icon"></span>
+                <p class="num-sideicon">31.5K</p>
+
+                <span class="fa fa-comment"></span>
+                <p class="num-sideicon">79</p>
+
+                <span class="fa fa-bookmark" id="bookmark-icon"></span>
+                <p class="num-sideicon">2667</p>
+
+                <span class="fa fa-share"></span>
+                <p class="num-sideicon">52</p>
+
+            </div>
+        </div>
+        </section>
+
+        <section class="content-box">
+            <div class="top-content">
+                <img src="img/test3.jpg" alt="pfp">
+            <span class="bio">
+                <span class="names">
+                    <p class="nickname">flurrex</p>
+                    <p class="proflie_name">.xflurr</p>
+                </span>
+                <span class="description">
+                    <p class="title">Random-text</p>
+                    <p class="hashtag">&#x23;fyp</p>
+                    <p class="hashtag">&#x23;foryou</p>
+                    <p class="hashtag">&#x23;viral</p>
+                </span>
+                <span class="music">
+                    <i class="fa fa-music"> - Kekky🍪/Kekky🍪/Kekky🍪/Kekky🍪Kekky🍪</i>
+                </span>
+            </span>
+            <div class="follow-button">Follow</div>
+        </div>
+        <div class="video-pt">
+            <div class="video-container">
+                <video autoplay loop muted src="video/vid2.mp4" id="video2"></video>
+                <i class="fa fa-pause play-icon" data-video-id="video2"></i>
+                <i class="fa fa-volume-off volume-icon" data-video-id="video2"></i>
+            </div>
+            <div class="video-sidebar">
+                <span class="proflie">
+                    <img src="img/test3.jpg" alt="pfp">
+                    <i class="fa fa-plus"></i>
+                </span>
+                <span class="fa fa-heart" id="heart-icon"></span>
+                <p class="num-sideicon">31.5K</p>
+
+                <span class="fa fa-comment"></span>
+                <p class="num-sideicon">79</p>
+
+                <span class="fa fa-bookmark" id="bookmark-icon"></span>
+                <p class="num-sideicon">2667</p>
+
+                <span class="fa fa-share"></span>
+                <p class="num-sideicon">52</p>
+
+            </div>
+        </div>
+        </section>
+
+        <section class="content-box">
+            <div class="top-content">
+                <img src="img/test6.jpg" alt="pfp">
+            <span class="bio">
+                <span class="names">
+                    <p class="nickname">_apghere_</p>
+                    <p class="proflie_name">Andy</p>
+                </span>
+                <span class="description">
+                    <p class="title">Random-text</p>
+                    <p class="hashtag">&#x23;fyp</p>
+                    <p class="hashtag">&#x23;foryou</p>
+                    <p class="hashtag">&#x23;viral</p>
+                </span>
+                <span class="music">
+                    <i class="fa fa-music"> - Kekky🍪/Kekky🍪/Kekky🍪/Kekky🍪Kekky🍪</i>
+                </span>
+            </span>
+            <div class="follow-button">Follow</div>
+        </div>
+        <div class="video-pt">
+            <div class="video-container">
+                <video autoplay loop muted src="video/vid1.mp4" id="video3"></video>
+                <i class="fa fa-pause play-icon" data-video-id="video3"></i>
+                <i class="fa fa-volume-off volume-icon" data-video-id="video3"></i>
+            </div>
+            <div class="video-sidebar">
+                <span class="proflie">
+                    <img src="img/test6.jpg" alt="pfp">
+                    <i class="fa fa-plus"></i>
+                </span>
+                <span class="fa fa-heart" id="heart-icon"></span>
+                <p class="num-sideicon">31.5K</p>
+
+                <span class="fa fa-comment"></span>
+                <p class="num-sideicon">79</p>
+
+                <span class="fa fa-bookmark" id="bookmark-icon"></span>
+                <p class="num-sideicon">2667</p>
+
+                <span class="fa fa-share"></span>
+                <p class="num-sideicon">52</p>
+
+            </div>
+        </div>
+        </section>
+    </section>
+    
+</body>
+<script src="js/aside-move.js"></script>
+<script src="js/color-change.js"></script>
+<script src="js/drop-down.js"></script>
+<script src="js/vol-pause-vid.js"></script>
+
+
+
+</html>

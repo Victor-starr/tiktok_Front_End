@@ -1,0 +1,185 @@
+section.content{
+    background-color: #121212;
+    position: fixed;
+    overflow-y: scroll;
+    top: 63px;
+    right: 0px;
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+    color: white;
+}
+section.content-box{
+    position: relative;
+    top: 0px;
+    height: 100%;
+    width: 500px;
+    /* border: rgb(0, 0, 0) 2px solid; */
+}
+div.top-content{
+    /* border: red 2px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 20px;
+}
+
+div.top-content img{
+    /* border: red 2px solid; */
+    position: relative;
+    left: 0px;
+    height: 50px;
+    border-radius: 50%;
+}
+span.bio{
+    /* border: rgb(8, 8, 8) 2px solid; */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+span.bio span{
+    /* border: rgb(0, 255, 255) 2px solid; */
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+span.bio span.names{
+    font-size: 18px;
+    height: auto;
+}
+span.bio span.names p {
+    margin: 5px;
+}
+span.bio p:hover{
+    text-decoration: underline rgb(165, 165, 165) solid 1px;
+}
+
+span.description p{
+    /* border: red 2px solid; */
+    margin: 0px;
+}
+p.hashtag{
+    color: #8fbee9;
+}
+
+span.music {
+    font-size: 15px;
+    overflow: hidden;
+}
+.music i {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: scrollText 10s linear infinite; 
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+div.top-content div.follow-button{
+    /* border: red 2px solid; */
+    padding: 10px 25px 10px 25px;
+    color: #ff3b5c;
+    border: #ff3b5c solid 1px;
+}
+div.top-content div.follow-button:hover{
+    background-color: rgba(230, 54, 83, 0.103);;
+}
+
+div.video-pt{
+    /* border: rgb(21, 243, 1) 2px solid;  */
+    border-bottom: #333333 1px solid;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0 40px 0;
+    margin-bottom: 50px;
+
+}
+div.video-pt video{
+    /* border: rgb(1, 126, 243) 2px solid;  */
+    height: 100%;
+    width: 400px;
+}
+div.video-container {
+    position: relative;
+}
+.fa-play,.fa-pause{
+    /* border:  red solid 2px; */
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    left: 15%;
+    font-size: 15px;
+    height: 31px;
+    width: 32px;
+}
+.fa-volume-up,.fa-volume-off{
+    /* border:  red solid 2px; */
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    right: 15%;
+    font-size: 20px;
+    border-radius: 50%;
+    height: 31px;
+    width: 32px;
+}
+
+div.video-sidebar span.proflie{
+    display: none;
+}
+div.video-sidebar{
+    /* border: rgb(243, 1, 231) 2px solid; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-left: 5px;
+}
+div.video-sidebar span{
+    background-color: #333333;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+div.video-sidebar p.num-sideicon{
+    /* border: rgb(243, 1, 231) 2px solid; */
+    display: flex;
+    justify-content: center;
+    margin: 5px 0 15px 0;
+}
+.fa-heart.active {
+    color: red;
+}
+
+/* Color for the active state of the bookmark icon */
+.fa-bookmark.active {
+    color: yellow;
+}
+
+/* go to html and type Finish Here*/
